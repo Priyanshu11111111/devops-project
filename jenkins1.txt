@@ -1,0 +1,183 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Install the latest PowerShell for new features and improvements! https://aka.ms/PSWindows
+
+PS C:\Users\priya> ssh -i C:\Users\priya\Downloads\final  ec2-user@3.238.150.35
+The authenticity of host '3.238.150.35 (3.238.150.35)' can't be established.
+ED25519 key fingerprint is SHA256:Cel4lwg4TS7bdjMou32KocHdq07klCYtP09TqsjaCKc.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added '3.238.150.35' (ED25519) to the list of known hosts.
+   ,     #_
+   ~\_  ####_        Amazon Linux 2023
+  ~~  \_#####\
+  ~~     \###|
+  ~~       \#/ ___   https://aws.amazon.com/linux/amazon-linux-2023
+   ~~       V~' '->
+    ~~~         /
+      ~~._.   _/
+         _/ _/
+       _/m/'
+[ec2-user@ip-10-0-1-254 ~]$ client_loop: send disconnect: Connection reset
+PS C:\Users\priya> ssh -i C:\Users\priya\Downloads\final  ec2-user@3.238.150.35
+   ,     #_
+   ~\_  ####_        Amazon Linux 2023
+  ~~  \_#####\
+  ~~     \###|
+  ~~       \#/ ___   https://aws.amazon.com/linux/amazon-linux-2023
+   ~~       V~' '->
+    ~~~         /
+      ~~._.   _/
+         _/ _/
+       _/m/'
+Last login: Fri Mar 21 12:50:32 2025 from 152.58.17.118
+[ec2-user@jenkins1 ~]$
+[ec2-user@jenkins1 ~]$
+[ec2-user@jenkins1 ~]$
+[ec2-user@jenkins1 ~]$
+[ec2-user@jenkins1 ~]$
+[ec2-user@jenkins1 ~]$
+[ec2-user@jenkins1 ~]$
+[ec2-user@jenkins1 ~]$
+[ec2-user@jenkins1 ~]$
+[ec2-user@jenkins1 ~]$ sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+0d5acd005f5945a7acbe9245565afdd4
+[ec2-user@jenkins1 ~]$ client_loop: send disconnect: Connection reset
+PS C:\Users\priya> ssh -i C:\Users\priya\Downloads\final  ec2-user@3.238.150.35
+   ,     #_
+   ~\_  ####_        Amazon Linux 2023
+  ~~  \_#####\
+  ~~     \###|
+  ~~       \#/ ___   https://aws.amazon.com/linux/amazon-linux-2023
+   ~~       V~' '->
+    ~~~         /
+      ~~._.   _/
+         _/ _/
+       _/m/'
+Last login: Fri Mar 21 13:05:15 2025 from 152.58.17.118
+[ec2-user@jenkins1 ~]$
+[ec2-user@jenkins1 ~]$
+[ec2-user@jenkins1 ~]$
+[ec2-user@jenkins1 ~]$ aws configure
+AWS Access Key ID [None]: AKIA6JQ444WIJZCM7PJD
+AWS Secret Access Key [None]: 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
+Default region name [None]: us-east-1
+Default output format [None]:
+[ec2-user@jenkins1 ~]$
+[ec2-user@jenkins1 ~]$
+[ec2-user@jenkins1 ~]$
+[ec2-user@jenkins1 ~]$
+[ec2-user@jenkins1 ~]$
+[ec2-user@jenkins1 ~]$
+[ec2-user@jenkins1 ~]$
+[ec2-user@jenkins1 ~]$ aws eks --region  us-east-1 update-kubeconfig --name cluster1
+Added new context arn:aws:eks:us-east-1:982534382992:cluster/cluster1 to /home/ec2-user/.kube/config
+[ec2-user@jenkins1 ~]$
+[ec2-user@jenkins1 ~]$
+[ec2-user@jenkins1 ~]$
+[ec2-user@jenkins1 ~]$
+[ec2-user@jenkins1 ~]$
+[ec2-user@jenkins1 ~]$
+[ec2-user@jenkins1 ~]$ sudo mkdir -p /var/lib/jenkins/.kube
+sudo cp -R /home/ec2-user/.kube/config /var/lib/jenkins/.kube/config
+sudo chown -R jenkins:jenkins /var/lib/jenkins/.kube
+[ec2-user@jenkins1 ~]$
+[ec2-user@jenkins1 ~]$
+[ec2-user@jenkins1 ~]$
+[ec2-user@jenkins1 ~]$
+[ec2-user@jenkins1 ~]$ sudo cp -R /home/ec2-user/.aws /var/lib/jenkins/.aws
+sudo chown -R jenkins:jenkins /var/lib/jenkins/.aws
+[ec2-user@jenkins1 ~]$
+[ec2-user@jenkins1 ~]$
+[ec2-user@jenkins1 ~]$
+[ec2-user@jenkins1 ~]$
+[ec2-user@jenkins1 ~]$
+[ec2-user@jenkins1 ~]$ sudo usermod -aG docker jenkins
+[ec2-user@jenkins1 ~]$ exit
+logout
+Connection to 3.238.150.35 closed.
+PS C:\Users\priya> ssh -i C:\Users\priya\Downloads\final  ec2-user@3.238.150.35
+   ,     #_
+   ~\_  ####_        Amazon Linux 2023
+  ~~  \_#####\
+  ~~     \###|
+  ~~       \#/ ___   https://aws.amazon.com/linux/amazon-linux-2023
+   ~~       V~' '->
+    ~~~         /
+      ~~._.   _/
+         _/ _/
+       _/m/'
+Last login: Fri Mar 21 13:26:39 2025 from 152.58.17.118
+[ec2-user@jenkins1 ~]$  sudo systemctl restart jenkins
+[ec2-user@jenkins1 ~]$
+[ec2-user@jenkins1 ~]$
+[ec2-user@jenkins1 ~]$
+[ec2-user@jenkins1 ~]$
+[ec2-user@jenkins1 ~]$
+[ec2-user@jenkins1 ~]$ client_loop: send disconnect: Connection reset
+PS C:\Users\priya> ssh -i C:\Users\priya\Downloads\final  ec2-user@3.238.150.35
+   ,     #_
+   ~\_  ####_        Amazon Linux 2023
+  ~~  \_#####\
+  ~~     \###|
+  ~~       \#/ ___   https://aws.amazon.com/linux/amazon-linux-2023
+   ~~       V~' '->
+    ~~~         /
+      ~~._.   _/
+         _/ _/
+       _/m/'
+Last login: Fri Mar 21 13:34:57 2025 from 152.58.17.118
+[ec2-user@jenkins1 ~]$ ls
+k8
+[ec2-user@jenkins1 ~]$
+[ec2-user@jenkins1 ~]$
+[ec2-user@jenkins1 ~]$
+[ec2-user@jenkins1 ~]$
+[ec2-user@jenkins1 ~]$
+[ec2-user@jenkins1 ~]$ cd k8
+[ec2-user@jenkins1 k8]$
+[ec2-user@jenkins1 k8]$ kubectl apply -f fe.yaml
+deployment.apps/frontend created
+service/frontend-service created
+[ec2-user@jenkins1 k8]$ kubectl apply -f be.yaml
+deployment.apps/backend created
+service/backend-service created
+[ec2-user@jenkins1 k8]$ kubectl apply -f db.yaml
+deployment.apps/database created
+service/database-service created
+[ec2-user@jenkins1 k8]$
+[ec2-user@jenkins1 k8]$
+[ec2-user@jenkins1 k8]$
+[ec2-user@jenkins1 k8]$
+[ec2-user@jenkins1 k8]$
+[ec2-user@jenkins1 k8]$
+[ec2-user@jenkins1 k8]$ kubectl get services
+NAME               TYPE           CLUSTER-IP       EXTERNAL-IP
+     PORT(S)        AGE
+backend-service    ClusterIP      10.100.109.130   <none>
+     5000/TCP       42s
+database-service   ClusterIP      None             <none>
+     3306/TCP       22s
+frontend-service   LoadBalancer   10.100.231.79    a41090161d125419985423559d6d1b8c-1478416866.us-east-1.elb.amazonaws.com   80:32025/TCP   64s
+kubernetes         ClusterIP      10.100.0.1       <none>
+     443/TCP        20m
+[ec2-user@jenkins1 k8]$ kubectl gclient_loop: send disconnect: Connection reset
+PS C:\Users\priya> ssh -i C:\Users\priya\Downloads\final  ec2-user@3.238.150.35
+   ,     #_
+   ~\_  ####_        Amazon Linux 2023
+  ~~  \_#####\
+  ~~     \###|
+  ~~       \#/ ___   https://aws.amazon.com/linux/amazon-linux-2023
+   ~~       V~' '->
+    ~~~         /
+      ~~._.   _/
+         _/ _/
+       _/m/'
+Last login: Fri Mar 21 13:42:31 2025 from 152.58.17.118
+[ec2-user@jenkins1 ~]$ kubectl get pod
+NAME                   client_loop: send disconnect: Connection reset
+PS C:\Users\priya> rvwvz    1/1     Running   0               5m10s
+database-755c9d776f-mc5wp   1/1     Running   0               4m50s
+frontend-6d5d645987-59jvn   1/1     Running   3 (5m15s ago)   5m32s
+[ec2-user@jenkins1 ~]$
